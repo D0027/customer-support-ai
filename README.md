@@ -1,44 +1,43 @@
 <div align="center">
 
-<img src="docs/banner.png" alt="TechMart Support Banner" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,50:8b5cf6,100:06b6d4&height=220&section=header&text=Customer%20Support%20AI&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Multi-Agent%20%E2%80%A2%20RAG%20%E2%80%A2%20Real-Time%20Support&descAlignY=58&descSize=18" width="100%" />
 
-# TechMart Support — Multi-Agent AI Customer Support Assistant
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=700&lines=Intent+detection+that+routes+like+magic+%E2%9C%A8;5+specialized+AI+agents+working+together+%F0%9F%A4%96;RAG+knowledge+base+powered+by+FAISS+%F0%9F%93%9A;Blazing+fast+inference+with+Groq+%E2%9A%A1" alt="Typing SVG" />
+</a>
 
-**Ask anything → Get accurate answers.** A production-grade AI support system with intent-aware multi-agent routing, RAG-grounded answers, and a fully-featured admin console — built for TechMart Electronics.
+<br/>
 
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Next.js](https://img.shields.io/badge/Frontend-Next.js-000000?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
-[![Groq](https://img.shields.io/badge/LLM-Groq-F55036?style=flat-square)](https://groq.com/)
-[![FAISS](https://img.shields.io/badge/Vector%20DB-FAISS-4B8BBE?style=flat-square)](https://github.com/facebookresearch/faiss)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)]()
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+![Stars](https://img.shields.io/github/stars/D0027/YOUR_REPO?style=social)
+![Forks](https://img.shields.io/github/forks/D0027/YOUR_REPO?style=social)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Status](https://img.shields.io/badge/status-production--ready-success?style=flat-square)
+
+**An intelligent, multi-agent customer support platform that understands intent, routes to the right specialist, and answers from your own knowledge base.**
+
+[🚀 Live Demo](YOUR_DEMO_URL) · [📖 API Docs](YOUR_API_URL/docs) · [🐛 Report Bug](https://github.com/D0027/YOUR_REPO/issues) · [✨ Request Feature](https://github.com/D0027/YOUR_REPO/issues)
 
 </div>
 
 ---
 
-## What this is
+## 📑 Table of Contents
 
-A customer support assistant that doesn't just chat — it **understands intent**, **routes to the right specialist agent(s)**, **retrieves answers from real company documents (RAG)**, and **escalates unhappy customers automatically**. Built as an industry-style capstone, then pushed well past spec with 45+ production-grade features.
-
-## Architecture
-Customer
-↓
-Web Chat (Next.js)
-↓
-Backend API (FastAPI)
-↓
-Intent Detection + Memory
-↓
-Agent Router (+ Sentiment)
-↓
-Billing / Technical / Product
-Complaint / FAQ
-↓
-RAG → FAISS → Company PDFs
-↓
-Streamed Answer + Sources
-
+- [✨ Highlights](#-highlights)
+- [🏗️ Architecture](#️-architecture)
+- [🧰 Tech Stack](#-tech-stack)
+- [🚀 Quick Start](#-quick-start)
+- [🌐 Deployment](#-deployment)
+- [📊 Module Coverage](#-module-coverage)
+- [🔑 Environment Variables](#-environment-variables)
+- [👨‍💻 Author](#-author)
 
 ---
 
@@ -46,40 +45,30 @@ Streamed Answer + Sources
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%">
 
-### 🧠 Intelligence
-- Multi-agent routing (5 specialists)
-- RAG over real company PDFs
-- Sentiment-based auto-escalation
-- Duplicate-query detection
-- AI-generated conversation summaries
-- Confidence scoring per reply
-- A/B testing on agent prompts
+### 🧠 Smart Routing
+Intent detection classifies every message and hands it to the best of **5 specialized agents**.
+
+### 📚 RAG Knowledge Base
+FAISS-powered retrieval grounds answers in your docs. Rebuild the index anytime from the admin panel.
 
 </td>
-<td width="33%" valign="top">
+<td width="50%">
 
-### 💬 Chat Experience
-- Real-time streaming responses
-- Voice input & voice output
-- Image upload with AI vision analysis
-- Drag-and-drop file upload
-- Markdown-rendered replies
-- Quick-reply suggestions
-- Message reactions & regenerate
+### 💬 Conversation Memory
+Context-aware replies that remember the whole conversation.
+
+### 📈 Analytics Dashboard
+Track conversations, intents, and agent performance in real time.
 
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td colspan="2" align="center">
 
-### 🛠️ Operations
-- Full admin analytics dashboard
-- SLA timers per ticket
-- Audit log & knowledge-gap detector
-- Customer health / churn score
-- Real-time admin presence
-- Canned response library
-- Rate limiting & session timeout
+### 🔐 Secure by Default
+JWT authentication · role-based admin panel · **+ 45 bonus features**
 
 </td>
 </tr>
@@ -87,73 +76,78 @@ Streamed Answer + Sources
 
 ---
 
-## 🖥️ Tech Stack
+## 🏗️ Architecture
 
-| Layer | Technology |
-|---|---|
-| **Frontend** | Next.js, React, Tailwind CSS, Framer Motion |
-| **Backend** | FastAPI, Python 3.11 |
-| **LLM** | Groq (Llama 3 / GPT-OSS) |
-| **RAG** | LangChain, FAISS, sentence-transformers |
-| **Database** | MongoDB (Atlas) |
-| **Auth** | JWT, bcrypt |
-| **Email** | SMTP (Gmail) for password reset |
-| **Deployment** | Vercel (frontend), Railway/Render (backend) |
+```mermaid
+flowchart LR
+    U([👤 User]) --> F[⚛️ Next.js Frontend]
+    F -->|REST + JWT| B[⚡ FastAPI Backend]
+    B --> I{🎯 Intent Detection}
+    I --> R[🧭 Multi-Agent Router]
+    R --> A1[🤖 Agent 1]
+    R --> A2[🤖 Agent 2]
+    R --> A3[🤖 Agent 3]
+    R --> A4[🤖 Agent 4]
+    R --> A5[🤖 Agent 5]
+    A1 & A2 & A3 & A4 & A5 --> K[(📚 FAISS Knowledge Base)]
+    A1 & A2 & A3 & A4 & A5 --> L[🚀 Groq LLM]
+    B <--> M[(🍃 MongoDB Atlas)]
+```
 
 ---
 
-## 📁 Project Structure
-customer-support-ai/
-├── frontend/ Next.js app
-│ ├── components/ UI components
-│ ├── pages/ chat, login,
-│ │ admin, welcome
-│ ├── hooks/ useChat etc.
-│ ├── context/ providers
-│ └── services/api.js
-│
-├── backend/ FastAPI app
-│ ├── api/ routes
-│ ├── agents/ 5 agents
-│ ├── rag/ ingestion
-│ ├── embeddings/
-│ ├── vectorstore/ FAISS
-│ ├── database/ Mongo
-│ └── models/schemas.py
-│
-├── knowledge_base/ 8 policy PDFs
-├── datasets/ eval refs
-└── docker-compose.yml
+## 🧰 Tech Stack
 
+| Layer | Technology |
+|---|---|
+| 🎨 Frontend | Next.js · React |
+| ⚙️ Backend | FastAPI · Python |
+| 🧠 LLM | Groq (`gpt-oss-120b`, vision model) |
+| 🔎 Retrieval | FAISS vector store |
+| 🗄️ Database | MongoDB Atlas |
+| 📧 Email | SMTP (Gmail) |
+| 🐳 DevOps | Docker · Vercel · Railway / Render |
 
 ---
 
 ## 🚀 Quick Start
 
-### Backend
+<details open>
+<summary><b>⚙️ Backend</b></summary>
+
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate          # macOS/Linux: source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 python -m vectorstore.store
 uvicorn main:app --reload --port 8000
 ```
-API docs: `http://localhost:8000/docs`
+📄 API docs: `http://localhost:8000/docs`
 
-### Frontend
+</details>
+
+<details open>
+<summary><b>🎨 Frontend</b></summary>
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-App: `http://localhost:3000` · Admin: `http://localhost:3000/admin`
+🌍 App: `http://localhost:3000` · 🛠️ Admin: `http://localhost:3000/admin`
 
-### Or with Docker
+</details>
+
+<details>
+<summary><b>🐳 Or with Docker</b></summary>
+
 ```bash
 docker-compose up --build
 ```
+
+</details>
 
 ---
 
@@ -161,22 +155,22 @@ docker-compose up --build
 
 | Layer | Host | Config |
 |---|---|---|
-| Frontend | Vercel | `frontend/vercel.json` |
-| Backend | Railway / Render | `backend/Dockerfile` |
-| Database | MongoDB Atlas | `MONGO_URI` in `.env` |
+| 🎨 Frontend | ![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=white) | `frontend/vercel.json` |
+| ⚙️ Backend | ![Railway](https://img.shields.io/badge/Railway%20/%20Render-0B0D0E?logo=railway&logoColor=white) | `backend/Dockerfile` |
+| 🗄️ Database | ![MongoDB](https://img.shields.io/badge/MongoDB%20Atlas-47A248?logo=mongodb&logoColor=white) | `MONGO_URI` in `.env` |
 
-1. Push to GitHub (done ✅)
-2. Deploy `frontend/` on Vercel — set `NEXT_PUBLIC_API_URL`
-3. Deploy `backend/` on Railway/Render — set env vars
-4. Connect MongoDB Atlas
-5. Call `POST /admin/knowledge-base/rebuild-index` once
+1. ✅ Push to GitHub
+2. 🎨 Deploy `frontend/` on Vercel and set `NEXT_PUBLIC_API_URL`
+3. ⚙️ Deploy `backend/` on Railway/Render and set env vars
+4. 🗄️ Connect MongoDB Atlas
+5. 🔄 Call `POST /admin/knowledge-base/rebuild-index` once
 
 ---
 
 ## 📊 Module Coverage
 
 | Module | Status |
-|---|---|
+|---|:---:|
 | Authentication (JWT) | ✅ |
 | Chat Interface | ✅ |
 | Intent Detection | ✅ |
@@ -205,10 +199,28 @@ SMTP_APP_PASSWORD=your_gmail_app_password
 SECRET_KEY=your_jwt_secret
 ```
 
+> ⚠️ Never commit your real `.env` file. Keep secrets out of Git!
+
 ---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+**Deepak Yadav**
+
+[![GitHub](https://img.shields.io/badge/GitHub-D0027-181717?style=for-the-badge&logo=github)](https://github.com/D0027)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-deepakyadav027-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/deepakyadav027)
+[![Portfolio](https://img.shields.io/badge/Portfolio-d0027.github.io-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://d0027.github.io)
+
+⭐ **If you like this project, drop a star, it really helps!** ⭐
+
+</div>
 
 <div align="center">
 
 **Built with FastAPI · Next.js · Groq · FAISS · MongoDB**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:8b5cf6,100:6366f1&height=120&section=footer" width="100%" />
 
 </div>
