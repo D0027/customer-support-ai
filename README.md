@@ -8,7 +8,7 @@
 
 <br/><br/>
 
-<img src="assets/thumbnail.png" alt="Customer Support AI - Multi-Agent, RAG, Source-Cited Answers" width="100%" />
+<img src="Customer support AI.png" alt="Customer Support AI - Multi-Agent, RAG, Source-Cited Answers" width="100%" />
 
 <br/><br/>
 
