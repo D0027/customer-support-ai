@@ -1,0 +1,553 @@
+{
+  "summary": {
+    "timestamp": "2026-08-10_13-09-16",
+    "dataset": "Banking77 (via DeepPavlov parquet mirror)",
+    "sample_size": 50,
+    "correct": 44,
+    "accuracy_pct": 88.0
+  },
+  "results": [
+    {
+      "query": "I would like an account for my children, how do I go about doing this?",
+      "ground_truth_label_id": 1,
+      "ground_truth_label_name": "age_limit",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq",
+        "product"
+      ],
+      "correct": true
+    },
+    {
+      "query": "How long for money transfer to show?",
+      "ground_truth_label_id": 48,
+      "ground_truth_label_name": "pending_transfer",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "What do I need to do to transfer my paycheck to my account?",
+      "ground_truth_label_id": 50,
+      "ground_truth_label_name": "receiving_money",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I accidentally made a transaction to the wrong account.",
+      "ground_truth_label_id": 8,
+      "ground_truth_label_name": "cancel_transfer",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "refund"
+      ],
+      "correct": true
+    },
+    {
+      "query": "How do I freeze my bank card, as there has been a strange withdrawal?",
+      "ground_truth_label_id": 20,
+      "ground_truth_label_name": "cash_withdrawal_not_recognised",
+      "expected_category": "complaint",
+      "predicted_intents": [
+        "billing",
+        "complaint"
+      ],
+      "correct": true
+    },
+    {
+      "query": "The card I have doesn't work.",
+      "ground_truth_label_id": 14,
+      "ground_truth_label_name": "card_not_working",
+      "expected_category": "technical",
+      "predicted_intents": [
+        "technical",
+        "billing"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I thought transfers were free, why was I charged a fee?",
+      "ground_truth_label_id": 64,
+      "ground_truth_label_name": "transfer_fee_charged",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "complaint"
+      ],
+      "correct": true
+    },
+    {
+      "query": "The transfer I just made needs to be cancelled right now. It was my mistake. Please help me cancel it before it goes through!",
+      "ground_truth_label_id": 8,
+      "ground_truth_label_name": "cancel_transfer",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "refund"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Do you know why my card payment is declined?",
+      "ground_truth_label_id": 25,
+      "ground_truth_label_name": "declined_card_payment",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Somebody has stolen my card, I need help please.",
+      "ground_truth_label_id": 41,
+      "ground_truth_label_name": "lost_or_stolen_card",
+      "expected_category": "complaint",
+      "predicted_intents": [
+        "billing",
+        "complaint"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Why am I required to verify my identity?",
+      "ground_truth_label_id": 74,
+      "ground_truth_label_name": "why_verify_identity",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Can you explain where I can find the auto-top option?",
+      "ground_truth_label_id": 4,
+      "ground_truth_label_name": "automatic_top_up",
+      "expected_category": "product",
+      "predicted_intents": [
+        "product",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "My top up didn't work.",
+      "ground_truth_label_id": 59,
+      "ground_truth_label_name": "top_up_failed",
+      "expected_category": "technical",
+      "predicted_intents": [
+        "billing",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "can I transfer my salary if it's in a different currency?",
+      "ground_truth_label_id": 50,
+      "ground_truth_label_name": "receiving_money",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I had a duplicate card and got charged twice. How do I resolve this?",
+      "ground_truth_label_id": 63,
+      "ground_truth_label_name": "transaction_charged_twice",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "complaint",
+        "refund"
+      ],
+      "correct": true
+    },
+    {
+      "query": "How can I get the cash deposit to show up on my account?",
+      "ground_truth_label_id": 6,
+      "ground_truth_label_name": "balance_not_updated_after_cheque_or_cash_deposit",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Are cheques accepted to my account? Mine didn't seem to work.",
+      "ground_truth_label_id": 6,
+      "ground_truth_label_name": "balance_not_updated_after_cheque_or_cash_deposit",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "How long will it take to deliver something to US?",
+      "ground_truth_label_id": 12,
+      "ground_truth_label_name": "card_delivery_estimate",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Can I get a card even if I live outside the UK?",
+      "ground_truth_label_id": 24,
+      "ground_truth_label_name": "country_support",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq",
+        "product"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I accidentally blocked my PIN. How do I reset it?",
+      "ground_truth_label_id": 49,
+      "ground_truth_label_name": "pin_blocked",
+      "expected_category": "technical",
+      "predicted_intents": [
+        "technical",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Where is the nearest bank machine?",
+      "ground_truth_label_id": 3,
+      "ground_truth_label_name": "atm_support",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "How can I top up by card?",
+      "ground_truth_label_id": 62,
+      "ground_truth_label_name": "topping_up_by_card",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "billing",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I don't recognize a debit payment that was made and would like to find out about the payment.",
+      "ground_truth_label_id": 28,
+      "ground_truth_label_name": "direct_debit_payment_not_recognised",
+      "expected_category": "complaint",
+      "predicted_intents": [
+        "billing",
+        "general_faq"
+      ],
+      "correct": false
+    },
+    {
+      "query": "Why hasn't my card been delivered?",
+      "ground_truth_label_id": 11,
+      "ground_truth_label_name": "card_arrival",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "product",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "\n\nWhat businesses accept this card?",
+      "ground_truth_label_id": 10,
+      "ground_truth_label_name": "card_acceptance",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Please delete my account. I am not happy with the service from your company.",
+      "ground_truth_label_id": 55,
+      "ground_truth_label_name": "terminate_account",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "complaint",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "What currencies are used in your exchange?",
+      "ground_truth_label_id": 36,
+      "ground_truth_label_name": "fiat_currency_support",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I don't live in the UK.  Can I still get a card?",
+      "ground_truth_label_id": 24,
+      "ground_truth_label_name": "country_support",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq",
+        "product"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Will it automatically top-up if there isn't much money left?",
+      "ground_truth_label_id": 4,
+      "ground_truth_label_name": "automatic_top_up",
+      "expected_category": "product",
+      "predicted_intents": [
+        "billing",
+        "general_faq"
+      ],
+      "correct": false
+    },
+    {
+      "query": "I need to change my name since I got married",
+      "ground_truth_label_id": 30,
+      "ground_truth_label_name": "edit_personal_details",
+      "expected_category": "technical",
+      "predicted_intents": [
+        "general_faq"
+      ],
+      "correct": false
+    },
+    {
+      "query": "My transfer did not seem to work.",
+      "ground_truth_label_id": 35,
+      "ground_truth_label_name": "failed_transfer",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "technical",
+        "billing"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I am having problems transferring to a beneficiary.",
+      "ground_truth_label_id": 7,
+      "ground_truth_label_name": "beneficiary_not_allowed",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "technical"
+      ],
+      "correct": false
+    },
+    {
+      "query": "I want to withdraw money, where can I go?",
+      "ground_truth_label_id": 3,
+      "ground_truth_label_name": "atm_support",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I want information about the source of funds.",
+      "ground_truth_label_id": 70,
+      "ground_truth_label_name": "verify_source_of_funds",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq",
+        "billing"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Am I able to get a second card?",
+      "ground_truth_label_id": 39,
+      "ground_truth_label_name": "getting_spare_card",
+      "expected_category": "product",
+      "predicted_intents": [
+        "product",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "What should I do if I think that someone else may be using my card.",
+      "ground_truth_label_id": 22,
+      "ground_truth_label_name": "compromised_card",
+      "expected_category": "complaint",
+      "predicted_intents": [
+        "billing",
+        "complaint"
+      ],
+      "correct": true
+    },
+    {
+      "query": "How do disposable cards work?",
+      "ground_truth_label_id": 37,
+      "ground_truth_label_name": "get_disposable_virtual_card",
+      "expected_category": "product",
+      "predicted_intents": [
+        "general_faq",
+        "product"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Something is wrong with my password.",
+      "ground_truth_label_id": 44,
+      "ground_truth_label_name": "passcode_forgotten",
+      "expected_category": "technical",
+      "predicted_intents": [
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I see a charge on my account that I don't recall making. I feel like my account may have been compromised.",
+      "ground_truth_label_id": 16,
+      "ground_truth_label_name": "card_payment_not_recognised",
+      "expected_category": "complaint",
+      "predicted_intents": [
+        "billing",
+        "complaint",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Can I give my friends access to my account so they can top it up for me?",
+      "ground_truth_label_id": 62,
+      "ground_truth_label_name": "topping_up_by_card",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "general_faq",
+        "billing"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Cannot access my top up.",
+      "ground_truth_label_id": 62,
+      "ground_truth_label_name": "topping_up_by_card",
+      "expected_category": "general_faq",
+      "predicted_intents": [
+        "technical",
+        "product"
+      ],
+      "correct": false
+    },
+    {
+      "query": "Why hasn't my balance increased after depositing a check?",
+      "ground_truth_label_id": 6,
+      "ground_truth_label_name": "balance_not_updated_after_cheque_or_cash_deposit",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "The withdrawal was declined I am unsure as to why this happened?",
+      "ground_truth_label_id": 26,
+      "ground_truth_label_name": "declined_cash_withdrawal",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "If the transfer details have already but reviewed and confirmed that they are correct, what other reason would cause my transfer to be declined?",
+      "ground_truth_label_id": 27,
+      "ground_truth_label_name": "declined_transfer",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?",
+      "ground_truth_label_id": 17,
+      "ground_truth_label_name": "card_payment_wrong_exchange_rate",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "product"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I tried using my card and it kept getting declined, Why?",
+      "ground_truth_label_id": 25,
+      "ground_truth_label_name": "declined_card_payment",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Are you able to locate my card?",
+      "ground_truth_label_id": 41,
+      "ground_truth_label_name": "lost_or_stolen_card",
+      "expected_category": "complaint",
+      "predicted_intents": [
+        "billing"
+      ],
+      "correct": false
+    },
+    {
+      "query": "Can I top up from my Apple Watch?",
+      "ground_truth_label_id": 2,
+      "ground_truth_label_name": "apple_pay_or_google_pay",
+      "expected_category": "product",
+      "predicted_intents": [
+        "product",
+        "technical"
+      ],
+      "correct": true
+    },
+    {
+      "query": "I am waiting for a pending money transfer to process.",
+      "ground_truth_label_id": 48,
+      "ground_truth_label_name": "pending_transfer",
+      "expected_category": "billing",
+      "predicted_intents": [
+        "billing",
+        "general_faq"
+      ],
+      "correct": true
+    },
+    {
+      "query": "Is my card broken?",
+      "ground_truth_label_id": 14,
+      "ground_truth_label_name": "card_not_working",
+      "expected_category": "technical",
+      "predicted_intents": [
+        "technical",
+        "billing"
+      ],
+      "correct": true
+    }
+  ]
+}

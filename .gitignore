@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Env files
+.env
+backend/.env
+
+# Node
+node_modules/
+.next/
+out/
+
+# Vectorstore (generated, not committed)
+backend/vectorstore/faiss_index/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
