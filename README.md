@@ -1,28 +1,32 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,50:8b5cf6,100:06b6d4&height=220&section=header&text=Customer%20Support%20AI&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Multi-Agent%20%E2%80%A2%20RAG%20%E2%80%A2%20Real-Time%20Support&descAlignY=58&descSize=18" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,50:14b8a6,100:8b5cf6&height=110&section=header" width="100%" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=700&lines=Intent+detection+that+routes+like+magic+%E2%9C%A8;5+specialized+AI+agents+working+together+%F0%9F%A4%96;RAG+knowledge+base+powered+by+FAISS+%F0%9F%93%9A;Blazing+fast+inference+with+Groq+%E2%9A%A1" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=14B8A6&center=true&vCenter=true&width=750&lines=Smarter+Agents+%E2%86%92+Better+Answers+%E2%86%92+Real+Support+%E2%9C%A8;Intent+detection+that+routes+like+magic+%F0%9F%A7%AD;5+specialized+agents+working+together+%F0%9F%A4%96;Every+answer+verified+and+source-cited+%F0%9F%9B%A1%EF%B8%8F" alt="Typing SVG" />
 </a>
 
-<br/>
+<br/><br/>
+
+<img src="assets/thumbnail.png" alt="Customer Support AI - Multi-Agent, RAG, Source-Cited Answers" width="100%" />
+
+<br/><br/>
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ![Stars](https://img.shields.io/github/stars/D0027/YOUR_REPO?style=social)
 ![Forks](https://img.shields.io/github/forks/D0027/YOUR_REPO?style=social)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-production--ready-success?style=flat-square)
 
-**An intelligent, multi-agent customer support platform that understands intent, routes to the right specialist, and answers from your own knowledge base.**
+**An intelligent multi-agent customer support platform that understands intent, routes to the right specialist, searches your knowledge base, and answers with sources.**
 
-[🚀 Live Demo](YOUR_DEMO_URL) · [📖 API Docs](YOUR_API_URL/docs) · [🐛 Report Bug](https://github.com/D0027/YOUR_REPO/issues) · [✨ Request Feature](https://github.com/D0027/YOUR_REPO/issues)
+[📖 API Docs](http://localhost:8000/docs) · [🐛 Report Bug](https://github.com/D0027/YOUR_REPO/issues) · [✨ Request Feature](https://github.com/D0027/YOUR_REPO/issues)
 
 </div>
 
@@ -32,6 +36,7 @@
 
 - [✨ Highlights](#-highlights)
 - [🏗️ Architecture](#️-architecture)
+- [🤖 Meet the Agents](#-meet-the-agents)
 - [🧰 Tech Stack](#-tech-stack)
 - [🚀 Quick Start](#-quick-start)
 - [🌐 Deployment](#-deployment)
@@ -47,28 +52,33 @@
 <tr>
 <td width="50%">
 
-### 🧠 Smart Routing
-Intent detection classifies every message and hands it to the best of **5 specialized agents**.
+### 🎯 Smart Routing
+Intent detection sends every message to the best of **5 specialized agents**.
 
-### 📚 RAG Knowledge Base
-FAISS-powered retrieval grounds answers in your docs. Rebuild the index anytime from the admin panel.
+### 📚 RAG Pipeline
+FAISS-powered search over your own knowledge base. Rebuild the index anytime from the admin panel.
+
+### 🌐 Web Search Fallback
+When the docs aren't enough, the web agent steps in.
 
 </td>
 <td width="50%">
 
+### 🛡️ Verified Answers
+A verifier step checks every draft against the retrieved evidence.
+
+### 🔗 Source Citations
+Answers come with file names and page numbers, so users see exactly where info came from.
+
 ### 💬 Conversation Memory
 Context-aware replies that remember the whole conversation.
-
-### 📈 Analytics Dashboard
-Track conversations, intents, and agent performance in real time.
 
 </td>
 </tr>
 <tr>
 <td colspan="2" align="center">
 
-### 🔐 Secure by Default
-JWT authentication · role-based admin panel · **+ 45 bonus features**
+### 📈 Analytics Dashboard · 🔐 JWT Auth · 🛠️ Admin Panel · **+ 45 bonus features**
 
 </td>
 </tr>
@@ -79,20 +89,37 @@ JWT authentication · role-based admin panel · **+ 45 bonus features**
 ## 🏗️ Architecture
 
 ```mermaid
-flowchart LR
-    U([👤 User]) --> F[⚛️ Next.js Frontend]
-    F -->|REST + JWT| B[⚡ FastAPI Backend]
-    B --> I{🎯 Intent Detection}
-    I --> R[🧭 Multi-Agent Router]
-    R --> A1[🤖 Agent 1]
-    R --> A2[🤖 Agent 2]
-    R --> A3[🤖 Agent 3]
-    R --> A4[🤖 Agent 4]
-    R --> A5[🤖 Agent 5]
-    A1 & A2 & A3 & A4 & A5 --> K[(📚 FAISS Knowledge Base)]
-    A1 & A2 & A3 & A4 & A5 --> L[🚀 Groq LLM]
-    B <--> M[(🍃 MongoDB Atlas)]
+flowchart TD
+    Q([👤 User Query]) --> I{🧠 Intent Detection + Router}
+    I --> R[📄 Retriever Agent<br/>Search Docs - RAG]
+    I --> S[🗃️ SQL Agent<br/>Database Queries]
+    I --> W[🌐 Web Agent<br/>Live Web Search]
+    I --> P[🎯 Specialist Agent<br/>Product / Billing / Technical]
+    I --> G[💬 Support Agent<br/>General Queries]
+    R --> V{🛡️ Verifier<br/>Checks Accuracy}
+    S --> V
+    W --> V
+    P --> V
+    G --> V
+    V --> Y[✨ Synthesizer<br/>Final Answer + Sources]
+    Y --> A([✅ Answer + Sources])
+    R -.-> K[(📚 Vector Store - FAISS)]
+    Y -.-> M[(🍃 MongoDB Atlas)]
 ```
+
+---
+
+## 🤖 Meet the Agents
+
+| Agent | Handles | Powered by |
+|---|---|---|
+| 📄 **Retriever Agent** | Search your docs (RAG) | FAISS vector store |
+| 🗃️ **SQL Agent** | Database queries | MongoDB Atlas |
+| 🌐 **Web Agent** | Live web search | Web search fallback |
+| 🎯 **Specialist Agent** | Product, billing and technical questions | Groq LLM |
+| 💬 **Support Agent** | General queries | Groq LLM |
+
+After the agents finish, the **🛡️ Verifier** checks accuracy and the **✨ Synthesizer** writes the final answer with sources.
 
 ---
 
@@ -102,6 +129,7 @@ flowchart LR
 |---|---|
 | 🎨 Frontend | Next.js · React |
 | ⚙️ Backend | FastAPI · Python |
+| 🕸️ Orchestration | LangGraph |
 | 🧠 LLM | Groq (`gpt-oss-120b`, vision model) |
 | 🔎 Retrieval | FAISS vector store |
 | 🗄️ Database | MongoDB Atlas |
@@ -211,16 +239,12 @@ SECRET_KEY=your_jwt_secret
 
 [![GitHub](https://img.shields.io/badge/GitHub-D0027-181717?style=for-the-badge&logo=github)](https://github.com/D0027)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-deepakyadav027-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/deepakyadav027)
-[![Portfolio](https://img.shields.io/badge/Portfolio-d0027.github.io-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://d0027.github.io)
+[![Portfolio](https://img.shields.io/badge/Portfolio-d0027.github.io-14B8A6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://d0027.github.io)
 
 ⭐ **If you like this project, drop a star, it really helps!** ⭐
 
-</div>
+**Built with FastAPI · Next.js · LangGraph · Groq · FAISS · MongoDB**
 
-<div align="center">
-
-**Built with FastAPI · Next.js · Groq · FAISS · MongoDB**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:8b5cf6,100:6366f1&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:14b8a6,100:0ea5e9&height=120&section=footer" width="100%" />
 
 </div>
