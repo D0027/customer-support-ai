@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,50:14b8a6,100:8b5cf6&height=180&section=header&text=Your%20Text%20Here&fontSize=42&fontColor=ffffff&fontAlignY=40&animation=fadeIn&desc=Your%20small%20tagline%20here&descAlignY=62&descSize=16" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,50:14b8a6,100:8b5cf6&height=180&section=header&text=Ask%20Anything%20%E2%86%92%20Get%20Verified%20Answers&fontSize=38&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=LangGraph%20%E2%80%A2%20FastAPI%20%E2%80%A2%20Next.js%20%E2%80%A2%20Groq%20%E2%80%A2%20FAISS%20%E2%80%A2%20MongoDB&descAlignY=62&descSize=16&descColor=e0f2fe" width="100%" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=14B8A6&center=true&vCenter=true&width=750&lines=Smarter+Agents+%E2%86%92+Better+Answers+%E2%86%92+Real+Support+%E2%9C%A8;Intent+detection+that+routes+like+magic+%F0%9F%A7%AD;5+specialized+agents+working+together+%F0%9F%A4%96;Every+answer+verified+and+source-cited+%F0%9F%9B%A1%EF%B8%8F" alt="Typing SVG" />
