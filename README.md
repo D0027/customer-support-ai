@@ -8,7 +8,7 @@
 
 <br/><br/>
 
-<img src="Customer support AI.png" alt="Customer Support AI - Multi-Agent, RAG, Source-Cited Answers" width="100%" />
+<img src="Customer%20support%20AI.png" alt="Customer Support AI - Multi-Agent, RAG, Source-Cited Answers" width="100%" />
 
 <br/><br/>
 
@@ -19,14 +19,14 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-![Stars](https://img.shields.io/github/stars/D0027/YOUR_REPO?style=social)
-![Forks](https://img.shields.io/github/forks/D0027/YOUR_REPO?style=social)
+![Stars](https://img.shields.io/github/stars/D0027/customer-support-ai?style=social)
+![Forks](https://img.shields.io/github/forks/D0027/customer-support-ai?style=social)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-production--ready-success?style=flat-square)
 
 **An intelligent multi-agent customer support platform that understands intent, routes to the right specialist, searches your knowledge base, and answers with sources.**
 
-[📖 API Docs](http://localhost:8000/docs) · [🐛 Report Bug](https://github.com/D0027/YOUR_REPO/issues) · [✨ Request Feature](https://github.com/D0027/YOUR_REPO/issues)
+[📖 API Docs](http://localhost:8000/docs) · [🐛 Report Bug](https://github.com/D0027/customer-support-ai/issues) · [✨ Request Feature](https://github.com/D0027/customer-support-ai/issues)
 
 </div>
 
@@ -144,7 +144,8 @@ After the agents finish, the **🛡️ Verifier** checks accuracy and the **✨ 
 <summary><b>⚙️ Backend</b></summary>
 
 ```bash
-cd backend
+git clone https://github.com/D0027/customer-support-ai.git
+cd customer-support-ai/backend
 python -m venv venv
 venv\Scripts\activate          # macOS/Linux: source venv/bin/activate
 pip install -r requirements.txt
